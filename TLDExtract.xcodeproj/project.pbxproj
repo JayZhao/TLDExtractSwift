@@ -558,7 +558,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "python update-psl.py\n";
+			shellScript = "python3 update-psl.py\n";
 		};
 		A7A0ED63219EC891004FBE05 /* Update Public Suffix List */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -576,7 +576,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "python update-psl.py\n";
+			shellScript = "python3 update-psl.py\n";
 		};
 		A7A0ED64219EC8A9004FBE05 /* Update Public Suffix List */ = {
 			isa = PBXShellScriptBuildPhase;

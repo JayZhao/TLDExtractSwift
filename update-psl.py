@@ -4,6 +4,7 @@
 import os
 import sys
 import re
+import ssl
 
 if __name__ == '__main__':
 
@@ -15,6 +16,7 @@ if __name__ == '__main__':
     try:
         # Python 3
         from urllib.request import urlopen
+        ssl._create_default_https_context = ssl._create_unverified_context
         response = urlopen(psl_url)
         psl_str = response.read().decode('utf-8')
     except ImportError:
